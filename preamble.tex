@@ -1,0 +1,70 @@
+\documentclass[12pt,a4paper,toc=bibliographynumbered, toc=listof, english, draft=false]{scrreprt} %draft
+
+%***************Start Paket-Einbindungen******************
+
+\usepackage{amsfonts,amsmath,amsthm}	
+\usepackage{makeidx}	%fuer Verwendung des index'
+\usepackage[colorlinks=false,pdfborder={0 0 0},plainpages=false]{hyperref}%fuer hyperlinks im pdf-format
+%GENAU DANN verwenden, wenn digital veroeffentlicht
+\usepackage{pgf} %fuer grafiken
+\usepackage[hang,flushmargin]{footmisc} %Manipulation der Footnotes
+\usepackage[square,sort,comma,numbers]{natbib} %Literaturverzeichnis mit Vancouver
+\usepackage[ngerman,english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}%zeilenabstand
+\onehalfspacing %1,5-facher zeilenabstand
+\usepackage{lmodern}
+\usepackage{microtype}%wichtig f�r Blockabsatz
+\usepackage{alnumsec}
+\usepackage[printonlyused]{acronym}
+\usepackage{pdfpages}
+\usepackage{anysize}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{parskip}%Einzug&Absatz
+\setlength{\parindent}{1em}%mit Einzug
+\usepackage{graphicx} %Grafiken
+\usepackage{lscape}
+\usepackage{float} %Float-Umgebung
+\usepackage{longtable} %Tabellen �ber zwei Seiten
+\usepackage{tabularx}
+\usepackage[font=small]{caption} %Float ohne Caption
+%\usepackage{titlesec} %Manipulation der Headings
+\usepackage{tocstyle}
+%\usetocstyle{allwithdot}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{fancyhdr} 
+\usepackage[nonumberlist, acronym, toc, section]{glossaries}
+\usepackage{lipsum}
+\usepackage{overpic}
+%\usepackage{helvet}
+\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry}
+\usepackage{tikz}
+
+%***************Ende Paket-Einbindungen******************
+
+%**************Start Allgemeine Optionen*****************
+\makeindex
+\makeglossaries
+\setlength{\parindent}{0pt} %kein Einzug (nie)
+%\renewcommand{\familydefault}{\sfdefault}
+%\newcommand{\abs}[1]{\left\vert#1\right\vert}
+%\renewcommand*\familydefault{\sfdefault}
+%\titlelabel{\thetitle.\quad}
+
+% Überschriften mit Serifen und BF
+\setkomafont{sectioning}{\normalfont\normalcolor\bfseries}
+
+
+%****************Ende Allgemeine Optionen*************
+
+
+
+%************** Start Befehle *************
+%Aenderung der Nummerierungsart (klein roemisch)
+\renewcommand{\labelenumi}{(\roman{enumi})}
+
+%************** Ende Befehle **************

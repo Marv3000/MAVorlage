@@ -1,0 +1,56 @@
+ %!TeX root = masterarbeit.tex
+\input{preamble} 	
+		%hier sind alle wichtigen eigenschaften
+							
+\begin{document}\selectlanguage{english}
+\thispagestyle{empty}
+%\pagenumbering{alph}
+\input{titlepage}
+\newpage
+\thispagestyle{empty}
+\input{gutachter}
+\newpage
+\thispagestyle{empty}
+%\input{versicherung}
+\newpage
+\pagenumbering{roman}   % i, ii, iii, iv, ...
+\setcounter{page}{1}
+%\input{gutachter}
+\tableofcontents
+\newpage
+%\input{sperrvermerk}
+%\input{dedication}
+%\input{thanks}
+%\newpage
+%\noindent\begin{minipage}{\textwidth}
+\listoffigures
+\listoftables
+%\end{minipage}
+\printglossaries
+\newpage
+%\input{abbrev}
+\newpage
+\pagenumbering{arabic}  % 1, 2, 3, 4, ...
+\setcounter{page}{2}
+			%Inhaltsverzeichnis
+\newpage
+
+\pagestyle{headings}
+
+\input{Introduction}
+%\input{theoreticalbackground}				%alle Kapitel kommen nun da rein
+%\input{methods}
+%\input{Results}
+%\input{discussion}
+%\input{conclusion}
+
+
+
+ %oder plainnatDeutsch (alphadin geht nicht mit natbib)amsalpha
+\bibliography{expose}
+\bibliographystyle{plainnat}
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+%\printindex										%fuer den Index
+%\input{appendix}
+\end{document}
+
